@@ -4,9 +4,9 @@
 class IpaBuild < Formula
     desc "xcode自动化打包"
     homepage "https://github.com/haozhiyu1990/build.git"
-    url "https://github.com/haozhiyu1990/build/archive/1.1.2.tar.gz"
-    version "1.1.2"
-    sha256 "37e47c8fae6eb79b32d5f71359001dfd3956169acc03754cb7c306131b3d9ec8"
+    url "https://github.com/haozhiyu1990/build/archive/1.2.0.tar.gz"
+    version "1.2.0"
+    sha256 "d7d5f65500973ba1d54fb7cb013302ad7057c21adc9f0485a667eb04186409c6"
     # license ""
   
     # depends_on "cmake" => :build
