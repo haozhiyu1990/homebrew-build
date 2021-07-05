@@ -1,1 +1,1 @@
-# homebrew-build
+# homebrew-core
