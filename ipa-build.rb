@@ -3,9 +3,9 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class IpaBuild < Formula
     desc "xcode自动化打包"
-    homepage "https://github.com/haozhiyu1990/build.git"
-    url "https://github.com/haozhiyu1990/build/archive/1.3.2.tar.gz"
     version "1.3.2"
+    homepage "https://github.com/haozhiyu1990/build.git"
+    url "https://github.com/haozhiyu1990/build/archive/#{version}.tar.gz"
     sha256 "80ddc0f17c77492acd0b012db8081d83ef025df2b39b2466acc97499d36803a3"
     # license ""
   
