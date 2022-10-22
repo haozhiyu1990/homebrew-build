@@ -3,10 +3,10 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class IpaBuild < Formula
     desc "xcode自动化打包"
-    version "1.3.5"
+    version "1.3.6"
     homepage "https://github.com/haozhiyu1990/build.git"
     url "https://github.com/haozhiyu1990/build/archive/#{version}.tar.gz"
-    sha256 "35beb5210417ac13fb523ea1765bf539c4a8e7777b40f98274fa589cee0a5a6f"
+    sha256 "c04a841b70c6416a7b0c3caafc69a6bec82268a187083237aa1d4639ee97f6de"
     # license ""
   
     # depends_on "cmake" => :build
