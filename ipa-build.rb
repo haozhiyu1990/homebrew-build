@@ -9,7 +9,7 @@ class IpaBuild < Formula
     sha256 "ad0db245a13a9d89ef9963a24228310b21cd48f5e9d5d135cb9a26a5f41eaa9f"
     # license ""
   
-    # depends_on "cmake" => :build
+    depends_on xcode: :build
   
     def install
       # ENV.deparallelize  # if your formula fails when building in parallel
@@ -17,7 +17,7 @@ class IpaBuild < Formula
       # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-      system "xcodebuild"
+      system "xcodebuild -scheme \"build\" -configuration Release"
       
       bin.install "build/Release/build"
     end
