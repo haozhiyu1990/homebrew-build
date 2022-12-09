@@ -5,21 +5,22 @@ class IpaBuild < Formula
     desc "xcode自动化打包"
     version "1.4.0"
     homepage "https://github.com/haozhiyu1990/build.git"
-    url "https://github.com/haozhiyu1990/build/archive/#{version}.tar.gz"
-    sha256 "ad0db245a13a9d89ef9963a24228310b21cd48f5e9d5d135cb9a26a5f41eaa9f"
+    url "https://github.com/haozhiyu1990/build/releases/download/#{version}/build.zip"
+    # url "https://github.com/haozhiyu1990/build/archive/#{version}.tar.gz"
+    sha256 "edff770f78aa3dd8f70ee69dc6e4e9f7e187002075af0c1d2bd5cef80c67f640"
     # license ""
   
-    depends_on xcode: :build
+    # depends_on xcode: :build
   
     def install
-      ENV.deparallelize  # if your formula fails when building in parallel
+      # ENV.deparallelize  # if your formula fails when building in parallel
       # Remove unrecognized options if warned by configure
       # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-      system "xcodebuild -scheme 'build' -configuration Release"
+      # system "xcodebuild -scheme 'build' -configuration Release"
       
-      bin.install "build/Release/build"
+      bin.install "build"
     end
   
     # test do
