@@ -17,7 +17,7 @@ class IpaBuild < Formula
       # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-      system "xcodebuild -scheme \"build\" -configuration Release"
+      system "xcodebuild -scheme 'build' -configuration Release"
       
       bin.install "build/Release/build"
     end
