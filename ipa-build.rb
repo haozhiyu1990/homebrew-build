@@ -6,7 +6,7 @@ class IpaBuild < Formula
     version "1.4.2"
     homepage "https://github.com/haozhiyu1990/build.git"
     url "https://github.com/haozhiyu1990/build/archive/#{version}.tar.gz"
-    sha256 "26e40de4b2918ed21a841b50c0b053e036a7724ae77fabe671bb97c1225c07c9"
+    sha256 "04d5ab09d1412185392847b89069d495400e07e8be3ae6c94f1e09672157a884"
     # license ""
   
     # depends_on xcode: :build
