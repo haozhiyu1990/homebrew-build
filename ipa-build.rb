@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class IpaBuild < Formula
     desc "xcode自动化打包"
-    version "1.4.1"
+    version "1.4.2"
     homepage "https://github.com/haozhiyu1990/build.git"
     url "https://github.com/haozhiyu1990/build/archive/#{version}.tar.gz"
     sha256 "26e40de4b2918ed21a841b50c0b053e036a7724ae77fabe671bb97c1225c07c9"
@@ -18,7 +18,7 @@ class IpaBuild < Formula
       # system "./configure", *std_configure_args, "--disable-silent-rules"
       # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
 
-      system "xcodebuild -scheme 'build' -configuration Release ARCHS=x86_64 TARGET_BUILD_DIR=./"
+      system "chmod a+x buildProConfig.sh", "./buildProConfig.sh"
       
       bin.install "build"
     end
