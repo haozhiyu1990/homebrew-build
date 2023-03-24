@@ -1,6 +1,6 @@
 cask "iconmaker" do
-  version "1.0.0"
-  sha256 "3e13b46a7b93fb639327d8371914d827642122f945fa10a7b08422c86f42ad00"
+  version "1.1.1"
+  sha256 "9f12ec7372c219989d08b4ac7b1a394b7bcc41db76954350c64c8ea068deff38"
 
   url "https://github.com/haozhiyu1990/iconMaker/releases/download/#{version}/App.Icon.Maker.zip"
   name "iconMaker"
